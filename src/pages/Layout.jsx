@@ -5,10 +5,12 @@ import { CiLocationOn, CiUser, CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import LanguageSelect from "../components/languageSelect";
 import Footer from "../components/footer"
+import { useTranslation } from "react-i18next";
 
 const TEXTS = ["5% dto. en libros e ebooks", "Descárgate nuestra APP", "Creado por Rubén García"];
 
 const Layout = () => {
+  const { t } = useTranslation();
 
   return (
     <>
@@ -16,7 +18,7 @@ const Layout = () => {
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between">
           <Link className="hover:underline">
             <Typewriter
-              words={TEXTS}
+              words={[t('greenNav1'), t('greenNav2'), t('greenNav3')]}
               loop={Infinity}
               cursor
               cursorStyle="|"
@@ -27,10 +29,10 @@ const Layout = () => {
           </Link>
 
           <ul className="flex justify-end space-x-4 mt-2 md:mt-0">
-            <li className="hover:underline"><Link>Blog</Link></li>
-            <li className="hover:underline"><Link>Estado de tu pedido</Link></li>
-            <li className="hover:underline"><Link>Ayuda</Link></li>
-            <li className="hover:underline"><Link>Venta a empresas e instituciones</Link></li>
+            <li className="hover:underline"><Link>{t('blog')}</Link></li>
+            <li className="hover:underline"><Link>{t('order_status')}</Link></li>
+            <li className="hover:underline"><Link>{t('help')}</Link></li>
+            <li className="hover:underline"><Link>{t('sell_bussiness')}</Link></li>
           </ul>
         </div>
 
@@ -48,7 +50,7 @@ const Layout = () => {
             <div className="flex flex-row space-x-0 border border-[#004D43]  mx-4 max-w-[620px] w-full overflow-hidden flex-shrink">
               <input
                 type="text"
-                placeholder="Busca por autor, título, ISBN"
+                placeholder={t('search_placeholder')}
                 className="p-2 w-full focus:outline-none focus:ring-2 focus:ring-[#004D43] focus:border-[#004D43] border-0"
               />
               <button className="bg-[#004D43] text-white p-2 w-[50px] flex justify-center items-center focus:outline-none border-0">
@@ -62,13 +64,13 @@ const Layout = () => {
               <Link className="mt-2 md:mt-0 flex items-center hover:bg-[#D8E3E2] p-2 rounded-md">
                 <div className="flex items-center space-x-2">
                   <CiLocationOn />
-                  <p>Librerías</p>
+                  <p>{t('bookstores')}</p>
                 </div>
               </Link>
               <Link className="mt-2 md:mt-0 flex items-center hover:bg-[#D8E3E2] p-2 rounded-md">
                 <div className="flex items-center space-x-2">
                   <CiUser />
-                  <p>Mi cuenta</p>
+                  <p>{t('account')}</p>
                 </div>
               </Link>
               <Link className="mt-2 md:mt-0 flex items-center relative group">
@@ -90,10 +92,10 @@ const Layout = () => {
 
         {/* Menú de navegación */}
         <div className="flex flex-wrap justify-center gap-4 px-4 md:px-16 max-w-[1300px] mx-auto text-[#004D43] text-[16px]">
-          <Link to={"/"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">Inicio</Link>
-          <Link to={"/libros"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">Libros</Link>
-          <Link to={"/audiolibros"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">Audiolibros</Link>
-          <Link to={"/peliculas"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">Películas</Link>
+          <Link to={"/"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('home')}</Link>
+          <Link to={"/libros"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('books')}</Link>
+          <Link to={"/audiolibros"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('audiobooks')}</Link>
+          <Link to={"/peliculas"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('movies')}</Link>
         </div>
       </nav>
 

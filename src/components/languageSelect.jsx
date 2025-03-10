@@ -6,11 +6,10 @@ import { useTranslation } from 'react-i18next'
 
 const LanguageSelect = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(LANGUAGES[0])
-    const { i18n, t } = useTranslation();
+    const { i18n } = useTranslation();
 
     const onChangeLang = (selectedLang) => {
         setSelectedLanguage(selectedLang);
-        console.log(selectedLang);
         i18n.changeLanguage(selectedLang.code);
     };
 
@@ -25,7 +24,7 @@ const LanguageSelect = () => {
                     <span className="text-gray-500 ml-2">▼</span> {/* Icono de dropdown */}
                 </ListboxButton>
 
-                <ListboxOptions className="absolute left-0 top-12 z-20 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden transition-all duration-200">
+                <ListboxOptions className="absolute left-0 top-11 z-20 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden transition-all duration-200">
                     {LANGUAGES.map((lang) => (
                         <ListboxOption key={lang.code} value={lang} className="cursor-pointer">
                             {({ active, selected }) => (
