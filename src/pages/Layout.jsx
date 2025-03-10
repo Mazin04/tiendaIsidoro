@@ -3,8 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Logo from "../assets/casaLibro.svg";
 import { CiLocationOn, CiUser, CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-import ReactCountryFlag from "react-country-flag";
-
+import LanguageSelect from "../components/languageSelect";
 import Footer from "../components/footer"
 
 const TEXTS = ["5% dto. en libros e ebooks", "Descárgate nuestra APP", "Creado por Rubén García"];
@@ -13,7 +12,7 @@ const Layout = () => {
 
   return (
     <>
-      <div id="greenNav" className="bg-[#004D43] text-white p-0 px-4 md:px-16 text-[14px] w-full">
+      <div id="greenNav" className="bg-[#004D43] text-white p-0 px-4 md:px-10 text-[14px] w-full">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between">
           <Link className="hover:underline">
             <Typewriter
@@ -41,7 +40,7 @@ const Layout = () => {
 
 
         {/* Contenedor central con un ancho máximo para el contenido */}
-        <div className="px-4 md:px-16 pt-4 max-w-[1300px] mx-auto">
+        <div className="px-2 md:px-4 pt-4 max-w-[1300px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <Link to={"/"}><img src={Logo} alt="Logo Casa del Libro" className="max-w-[200px]" /></Link>
 
@@ -82,16 +81,8 @@ const Layout = () => {
                 </div>
               </Link>
 
+              <LanguageSelect />
 
-              <button className="mt-2 md:mt-0 flex items-center focus:outline-none hover:cursor-pointer">
-                <ReactCountryFlag
-                  countryCode="ES"
-                  className="emojiFlag"
-                  style={{
-                    fontSize: '1.5em',
-                  }}
-                />
-              </button>
             </div>
 
           </div>
