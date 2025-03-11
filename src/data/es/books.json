@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Dan Da Dan",
+        "volume": "Vol.6",
+        "author": "Yukinobu Tatsu",
+        "price": "8.70",
+        "type": "Manga / Sobrenatural",
+        "volCover": "assets/img/libros/dandadanVol6.webp"
+    },
+    {
+        "id": 2,
+        "name": "Dragon Ball Super",
+        "volume": "Vol.4",
+        "author": "Akira Toriyama",
+        "price": "8.70",
+        "type": "Manga / Acción",
+        "volCover": "assets/img/libros/dbVol4.webp"
+    },
+    {
+        "id": 4,
+        "name": "Dragon Ball Super",
+        "volume": "Vol.19",
+        "author": "Akira Toriyama",
+        "price": "8.70",
+        "type": "Manga / Acción",
+        "volCover": "assets/img/libros/dbVol19.webp"
+    },
+    {
+        "id": 5,
+        "name": "Kaiju No.8",
+        "volume": "Vol.8",
+        "author": "Naoya Matsumoto",
+        "price": "8.70",
+        "type": "Manga / Acción",   
+        "volCover": "assets/img/libros/kaijuVol8.webp"
+    },
+    {
+        "id": 6,    
+        "name": "Kaiju No.8",
+        "volume": "Vol.9",
+        "author": "Naoya Matsumoto",
+        "price": "8.70",
+        "type": "Manga / Acción",
+        "volCover": "assets/img/libros/kaijuVol9.webp"
+    },
+    {
+        "id": 7,
+        "name": "Kaiju No.8",
+        "volume": "Vol.10",
+        "author": "Naoya Matsumoto",
+        "price": "8.70",
+        "type": "Manga / Acción",
+        "volCover": "assets/img/libros/kaijuVol10.webp"
+    },
+    {
+        "id": 8,
+        "name": "My Hero Academia",
+        "volume": "Vol.19",
+        "author": "Kohei Horikoshi",
+        "price": "8.70",
+        "type": "Manga / Acción",
+        "volCover": "assets/img/libros/mhaVol19.webp"
+    },
+    {
+        "id": 9,
+        "name": "My Hero Academia",
+        "volume": "Vol.33",
+        "author": "Kohei Horikoshi",
+        "price": "8.70",
+        "type": "Manga / Acción",
+        "volCover": "assets/img/libros/mhaVol33.webp"
+    }
+]
+  

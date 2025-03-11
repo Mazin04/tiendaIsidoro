@@ -7,7 +7,6 @@ import LanguageSelect from "../components/languageSelect";
 import Footer from "../components/footer"
 import { useTranslation } from "react-i18next";
 
-const TEXTS = ["5% dto. en libros e ebooks", "Descárgate nuestra APP", "Creado por Rubén García"];
 
 const Layout = () => {
   const { t } = useTranslation();
@@ -22,7 +21,7 @@ const Layout = () => {
               loop={Infinity}
               cursor
               cursorStyle="|"
-              typeSpeed={70}
+              typeSpeed={50}
               deleteSpeed={50}
               delaySpeed={1000}
             />

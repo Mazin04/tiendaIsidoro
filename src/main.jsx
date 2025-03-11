@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
+import Books from './pages/Books'
 import NoPage from './pages/NoPage'
 import LoadingSpinner from './pages/Loading'
 import './index.css'
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="/libros" element={<Books />} />
             <Route path="*" element={<NoPage />} />
             <Route path="/404_not_found" element={<NoPage />} />
           </Route>
