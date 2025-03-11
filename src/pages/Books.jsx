@@ -39,6 +39,7 @@ const Books = () => {
                     {books.map((book) => (
                         <ItemStore
                             key={book.id}
+                            id = {book.id}  
                             name={book.name}
                             author={book.author}
                             volume={book.volume}

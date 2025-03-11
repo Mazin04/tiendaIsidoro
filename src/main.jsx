@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Books from './pages/Books'
 import NoPage from './pages/NoPage'
 import LoadingSpinner from './pages/Loading'
+import BookDetail from './pages/BookDetail'
 import './index.css'
 import "./i18n"
 
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/libros" element={<Books />} />
+            <Route path="/libros/:id" element={<BookDetail />} />
             <Route path="*" element={<NoPage />} />
             <Route path="/404_not_found" element={<NoPage />} />
           </Route>
