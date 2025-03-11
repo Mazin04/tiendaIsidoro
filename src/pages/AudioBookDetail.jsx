@@ -54,7 +54,7 @@ const AudioBookDetail = () => {
                 <div className="col-span-2">
                     <div className="w-full h-72 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
                         <img
-                            src={`/${book.volCover}`}
+                            src={`/${book.cover}`}
                             alt={book.name}
                             className="w-full h-full object-cover transform transition-all duration-300 hover:scale-105"
                         />

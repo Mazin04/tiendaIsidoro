@@ -6,7 +6,7 @@
         "author": "Ángel Martín",
         "price": "18.99",
         "type": ["Español", "4h 11min"],
-        "volCover": "assets/img/audiolibros/porSiLasVocesVuelven.jpg",
+        "cover": "assets/img/audiolibros/porSiLasVocesVuelven.jpg",
         "audio": "assets/audio/PorSiLasVocesVuelven.mp3",
         "synopsis": "Hace unos años me rompí por completo. Tanto como para que tuvieran que atarme a la cama de un hospital psiquiátrico para evitar que pudiera hacerme daño. No tengo ni idea de cuándo empezó a formarse mi locura. A lo mejor nací genéticamente predispuesto. A lo mejor fui macerando una depresión al callarme ciertas cosas por no preocupar a los demás. O a lo mejor simplemente hay cerebros que de la noche a la mañana hacen crec y se acabó. Si algo he descubierto en todo este tiempo es que cuando cuentas abiertamente que se te ha pirado la cabeza la gente enseguida le pone el sello de tabú. Aunque este audiolibro lo he narrado para mí, por si las voces vuelven, es para cualquiera que haya pasado o esté pasando por algo parecido, y así romper de una vez por todas el estigma de las enfermedades mentales. Pero si simplemente te apetece jugar a ver el mundo como yo lo vi mientras perdí el contacto con la realidad, este audiolibro también es para ti. Si escuchas bien las voces, descubrirás cosas fascinantes como esta: No necesitas llegar a tocar fondo para reconstruirte desde cero. ¿Empezamos? Un sorprendente testimonio sobre la locura. Un relato en primera persona sobre lo que supone perderse y tener que reconstruirse desde cero. Una historia vitalista que te agarra desde la primera línea."
     },
@@ -17,7 +17,7 @@
         "author": "Eckhart Tolle",
         "price": "16.99",
         "type": ["Español", "6h 49min"],
-        "volCover": "assets/img/audiolibros/elPoderDelAhora.jpg",
+        "cover": "assets/img/audiolibros/elPoderDelAhora.jpg",
         "audio": "assets/audio/ElPoderDelAhora.mp3",
         "synopsis": "FonoLibro se enorgullece en presentar el audiolibro en español del best seller del New York Times, El Poder del Ahora de Eckhart Tolle. Para hacer el viaje a El Poder del Ahora necesitas dejar atrás tu mente analitica y tu falso yo, tu ego. Acceso al ahora esta en todas partes - en el cuerpo, en el silencio, y el espacio alrededor tuyo. Estas son las claves para entrar en un estado de paz interior. Ellas pueden ser usadas para traerte al ahora, al momento presente, donde los problemas no existen. Es aquí donde encuentras tu alegría y eres capaz de encontrarte a ti mismo. Es aquí donde tú descubres que eres completo y perfecto. A pesar que el viaje es un reto, Eckhart Tolle ofrece un lenguaje simple en un formato de preguntas y respuestas. Las palabras mismas son señalizaciones que te guiarán en tu viaje. Hay nuevos descubrimientos a hacerse a lo largo del camino: Tu no eres tu mente, tu puedes encontrar tu camino fuera del dolor psicológico, el autentico poder humano es encontrado rindiéndose al ahora. Cuando te vuelvas completamente presente y aceptes lo que es, te abrirás a ti mismo a la transformante experiencia de El Poder Del Ahora."
     },
@@ -28,7 +28,7 @@
         "author": "Yuval Noah Harari",
         "price": "19.99",
         "type": ["Español", "16h 20min"],
-        "volCover": "assets/img/audiolibros/sapiens.jpg",
+        "cover": "assets/img/audiolibros/sapiens.jpg",
         "audio": "assets/audio/Sapiens.mp3",
         "synopsis": "El libro de no ficción del año. Bestseller internacional con más de diez millones de ejemplares vendidos. Número uno en la lista de The New York Times. Recomendado por Barack Obama, Bill Gates y Mark Zuckerberg. De la mano de uno de los historiadores más interesantes de la actualidad, he aquí la fascinante interpretación de Yuval Noah Harari sobre la historia de la humanidad. Bestseller nacional e internacional, este libro explora las formas en que la biología y la historia nos han definido y han mejorado nuestra comprensión de lo que significa ser 'humano'. Hace 70,000 años al menos seis especies de humanos habitaban la Tierra. Hoy solo queda una, la nuestra: Homo Sapiens. ¿Cómo logró nuestra especie imponerse en la lucha por la existencia? ¿Por qué nuestros ancestros recolectores se unieron para crear ciudades y reinos? ¿Cómo llegamos a creer en dioses, en naciones o en los derechos humanos; a confiar en el dinero, en los libros o en las leyes? ¿Cómo acabamos sometidos a la burocracia, a los horarios y al consumismo? ¿Y cómo será el mundo en los milenios venideros? En Sapiens, Yuval Noah Harari traza una breve historia de la humanidad, desde los primeros humanos que caminaron sobre la Tierra hasta los radicales y a veces devastadores avances de las tres grandes revoluciones que nuestra especie ha protagonizado: la cognitiva, la agrícola y la científica. A partir de hallazgos de disciplinas tan diversas como la biología, la antropología o la economía, Harari explora cómo las grandes corrientes de la historia han modelado nuestra sociedad, los animales y las plantas que nos rodean e incluso nuestras personalidades. ¿Hemos ganado en felicidad a medida que ha avanzado la historia? ¿Seremos capaces de liberar alguna vez nuestra conducta de la herencia del pasado? ¿Podemos hacer algo para influir en los siglos futuros? Audaz, ambicioso y provocador, este libro cuestiona todo lo que creíamos saber sobre el ser humano: nuestros orígenes, nuestras ideas, nuestras acciones, nuestro poder...y nuestro futuro."
     },
@@ -39,7 +39,7 @@
         "author": "George Orwell",
         "price": "14.99",
         "type": ["Español", "3h 27min"],
-        "volCover": "assets/img/audiolibros/1984.jpg",
+        "cover": "assets/img/audiolibros/1984.jpg",
         "audio": "assets/audio/1984.mp3",
         "synopsis": "En un futuro distópico, Winston Smith vive en una sociedad controlada por un gobierno totalitario. La novela explora los temas del control social, la libertad individual y la verdad."
     },
@@ -50,7 +50,7 @@
         "author": "Paulo Coelho",
         "price": "19.99",
         "type": ["Español", "6h 50min"],
-        "volCover": "assets/img/audiolibros/elAlquimista.jpg",
+        "cover": "assets/img/audiolibros/elAlquimista.jpg",
         "audio": "assets/audio/ElAlquimista.mp3",
         "synopsis": "La historia de Santiago, un joven pastor que emprende un viaje en busca de su leyenda personal. Un cuento de superación, sueños y la búsqueda de la felicidad."
     },
@@ -61,7 +61,7 @@
         "author": "Viktor Frankl",
         "price": "17.99",
         "type": ["Español", "5h 40min"],
-        "volCover": "assets/img/audiolibros/elHombreEnBuscaDeSentido.jpg",
+        "cover": "assets/img/audiolibros/elHombreEnBuscaDeSentido.jpg",
         "audio": "assets/audio/ElHombreEnBuscaDeSentido.mp3",
         "synopsis": "Frankl narra sus experiencias como prisionero en campos de concentración nazis y cómo estas experiencias le llevaron a desarrollar la logoterapia, una terapia basada en la búsqueda de sentido."
     }
