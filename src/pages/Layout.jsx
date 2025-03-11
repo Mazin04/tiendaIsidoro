@@ -41,8 +41,10 @@ const Layout = () => {
     const term = e.target.value;
     setSearchTerm(term);
 
+    setFilteredResults([]);
+
     if (term.length >= 1) {
-      const regex = new RegExp(`\\b${term}`, "i");
+      const regex = new RegExp(`\\b${term}\\b`, "i"); // Búsqueda exacta de palabra
       const results = allItems.filter((item) => regex.test(item.name));
       console.log(results);
       setFilteredResults(results);
@@ -98,26 +100,30 @@ const Layout = () => {
                 <CiSearch className="text-2xl" />
               </button>
               {filteredResults.length > 0 && (
-                <div className="absolute left-0 top-10 z-50 w-full h-fit bg-white shadow-lg border-b border-x border-[#004D43] max-h-[150px] overflow-auto">
+                <div className="absolute left-0 top-10 z-50 w-full h-fit bg-white shadow-lg border-b border-x border-[#004D43] max-h-[200px] overflow-auto">
                   {filteredResults.map((item) => (
                     <Link
                       onClick={() => {
                         setSearchTerm(""); // Vaciar el input
                         setFilteredResults([]); // Limpiar los resultados
-                      }}
-                      key={item.id}
-                      to={`/${item.type}/${item.id}`}
-                      className="block px-4 py-2 hover:bg-gray-200"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+                        }}
+                        key={item.id}
+                        to={`/${item.type}/${item.id}`}
+                        className="flex flex-row items-center justify-start px-4 py-2 hover:bg-gray-200 border-b border-[#DCDFE6]"
+                      >
+                        <img src={`/${item.cover}`} alt={item.name} className="h-28 object-cover mr-4" />
+                        <div className="flex flex-col space-y-2">
+                        <p className="font-semibold">{item.name}</p>
+                        <p>{item.author || item.director}</p>
+                        </div>
+                      </Link>
+                      ))}
+                    </div>
+                    )}
+                  </div>
 
 
-            {/* Iconos de ubicación y usuario */}
+                  {/* Iconos de ubicación y usuario */}
             <div className="flex flex-row space-x-2 text-[#004D43]">
               <Link className="mt-2 md:mt-0 flex items-center hover:bg-[#D8E3E2] p-2 rounded-md">
                 <div className="flex items-center space-x-2">

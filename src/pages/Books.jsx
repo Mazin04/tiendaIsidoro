@@ -45,7 +45,7 @@ const Books = () => {
                             volume={book.volume}
                             price={book.price}
                             type={book.type}
-                            volCover={book.volCover}
+                            volCover={book.cover}
                         />
                     ))}
                 </section>

@@ -6,7 +6,7 @@
         "author": "Yukinobu Tatsu",
         "price": "8.70",
         "type": ["Manga", "Sobrenatural"],
-        "volCover": "assets/img/libros/dandadanVol6.webp",
+        "cover": "assets/img/libros/dandadanVol6.webp",
         "synopsis": "¡OKARUN CONTRA EL OJEADOR! La familia Kitô hace caer a Okarun y los demás al sótano de la casa de Jiji para usarlos como ofrenda para la serpiente gigante. En ese sótano, que solía usarse para sacrificar a niños en el pasado, reside un ojeador que se hace con el cuerpo de Jiji... ¡y ataca a Momo y Okarun! Okarun decide ayudar a Momo a salir a la superficie para enfrentarse el solo al ojeador. Momo, una vez en el exterior, trama un plan para derribar a la serpiente gigante. ¡¿Serán capaces de acabar con la violenta serpiente gigante y salvar a Jiji del ojeador?!"
     },
     {
@@ -16,7 +16,7 @@
         "author": "Akira Toriyama",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/dbVol4.webp",
+        "cover": "assets/img/libros/dbVol4.webp",
         "synopsis": "Goku Black, que se dedica a causar estragos en el futuro de un mundo paralelo, ¡es en realidad Zamasu que, conducido por un retorcido sentido de la justicia, se dispone a exterminar a la humanidad en pleno! Goku consigue dominar el mafûba, la tecnica que le permitirá derrotar al inmortal Zamasu, ¡y junto a Vegeta se dirigen al futuro en el que los espera Trunks...!"
     },
     {
@@ -26,7 +26,7 @@
         "author": "Akira Toriyama",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/dbVol19.webp",
+        "cover": "assets/img/libros/dbVol19.webp",
         "synopsis": "Cuando Gas parecía totalmente acorralado ante los fieros ataques de Granola, libera sus instintos y protagoniza un despertar. Goku y Vegeta se encuentran abrumados ante su apabullante poder. ¿¡Podría ser que la clave para derrotar a Gas se encuentre en los recuerdos de Bardock, el difunto padre de Goku...!?"
     },
     {
@@ -36,7 +36,7 @@
         "author": "Naoya Matsumoto",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/kaijuVol8.webp",
+        "cover": "assets/img/libros/kaijuVol8.webp",
         "synopsis": "Reno Ichikawa sigue entrenándose para dominar el arma creada a partir de un Kaiju identificado que le asignaron. La prueba para demostrar los resultados de su entrenamiento comienza cuando se enfrenta a un Kaiju. Mientras tanto, Iharu, que ha sido testigo del crecimiento de Reno desde que se conocieron, tiene sentimientos encontrados, dándole la sensación de que se queda atrás. Los dos se retan a derrotar al Kaiju, pero... ¡algo le ocurre a Reno! ¡En busca de la esperanza en este octavo tomo!"
     },
     {
@@ -46,7 +46,7 @@
         "author": "Naoya Matsumoto",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/kaijuVol9.webp",
+        "cover": "assets/img/libros/kaijuVol9.webp",
         "synopsis": "Reno Ichikawa entrena duro para convertirse en el primer portador en la historia del arma del sexto Kaiju. Kafka, por su parte, prosigue sus esfuerzos aprendiendo técnicas de combate cuerpo a cuerpo con Hoshina. Las Fuerzas de Defensa tratan de anticiparse al ataque del noveno Kaiju y preparan a sus tropas para ello. Mientras tanto, Narumi instruye a Kikoru para que utilice la herencia de su madre: el arma del cuarto Kaiju. ¡La nueva generación se pone en marcha en este noveno tomo!"
     },
     {
@@ -56,7 +56,7 @@
         "author": "Naoya Matsumoto",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/kaijuVol10.webp",
+        "cover": "assets/img/libros/kaijuVol10.webp",
         "synopsis": "Reno Ichikawa sigue entrenándose para dominar el arma creada a partir de un Kaiju identificado que le asignaron. La prueba para demostrar los resultados de su entrenamiento comienza cuando se enfrenta a un Kaiju. Mientras tanto, Iharu, que ha sido testigo del crecimiento de Reno desde que se conocieron, tiene sentimientos encontrados, dándole la sensación de que se queda atrás. Los dos se retan a derrotar al Kaiju, pero... ¡algo le ocurre a Reno! ¡En busca de la esperanza en este octavo tomo!"
     },
     {
@@ -66,7 +66,7 @@
         "author": "Kohei Horikoshi",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/mhaVol19.webp",
+        "cover": "assets/img/libros/mhaVol19.webp",
         "synopsis": "¡¡No puede faltar un buen festival en una escuela!! ¡Con la tensión que se respira últimamente, esto servirá para despejarse! ¡No se si sere de mucha ayuda, pero que no falte el rock! ¡Plus ultra (más allá)!"
     },
     {
@@ -76,7 +76,7 @@
         "author": "Kohei Horikoshi",
         "price": "8.70",
         "type": ["Manga", "Acción"],
-        "volCover": "assets/img/libros/mhaVol33.webp",
+        "cover": "assets/img/libros/mhaVol33.webp",
         "synopsis": "Perseguido por Lady Nagant, Deku descubre a través de la historia de la joven el lado oscuro de la sociedad de los superhéroes... Pero sus nuevos poderes y su inquebrantable determinación le permiten ganar la pelea. Desafortunadamente, el adolescente se separa cada vez más de los demás para no involucrarlos en su lucha... Solo contra todos, ¿cuánto tiempo podrá resistir?"
     }
 ]
