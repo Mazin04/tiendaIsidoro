@@ -2,8 +2,10 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaShare } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 // Libros de la tienda
 import booksEN from "../data/en/audiobooks.json";
@@ -17,7 +19,7 @@ const AudioBookDetail = () => {
     const [copySuccess, setCopySuccess] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false); // Estado para controlar la expansión
 
-    useState(() => {
+    useEffect(() => {
         const books = i18n.language === "es" ? booksES : booksEN;
         const book = books.find((book) => book.id === parseInt(id));
         setBook(book);
@@ -88,7 +90,7 @@ const AudioBookDetail = () => {
                         onClick={toggleExpand}
                         className="text-[#004D43] mt-1"
                     >
-                        {isExpanded ? t('see_less') : t('see_more')}
+                        {isExpanded ? <><div className="flex flex-row justify-center items-center">{t('see_less')}<MdKeyboardArrowUp className="ml-2"/></div></> : <><div className="flex flex-row justify-center items-center">{t('see_more')}<MdKeyboardArrowDown className="ml-2"/></div></>}
                     </button>
                 </div>
 

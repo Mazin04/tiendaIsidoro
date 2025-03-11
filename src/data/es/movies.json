@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Dragon Ball Super: Broly",
+        "director": "Tatsuya Nagamine",
+        "price": "10.99",
+        "type": ["Anime", "Acción", "Aventura"],
+        "cover": "assets/img/peliculas/dbBroly.webp",
+        "video": "assets/video/peliculas/dbBroly.mp4",
+        "synopsis": "La paz ha regresado una vez más a la Tierra tras el Torneo de Poder. Al descubrir que en los diferentes universos hay seres increíblemente poderosos que aún no ha visto, Goku tiene intención de seguir entrenando para hacerse aún más fuerte. Entonces, un día, un saiyan llamado Broly al que nunca antes han visto se presenta ante Goku y Vegeta."
+    },
+    {
+        "id": 2,
+        "name": "Sonic 3",
+        "director": "Jeff Fowler",
+        "price": "10.99",
+        "type": ["Acción", "Aventura", "Comedia"],
+        "cover": "assets/img/peliculas/sonic3.webp",
+        "video": "assets/video/peliculas/sonic3.mp4",
+        "synopsis": "Sonic, Knuckles y Tails vuelven en su aventura más gloriosa hasta la fecha. El equipo se reúne para enfrentarse a un nuevo y formidable enemigo, Shadow, un misterioso erizo con poderes nunca vistos."
+    },
+    {
+        "id": 3,
+        "name": "Iron Man",
+        "director": "Jon Favreau",
+        "price": "5.99",
+        "cover": "assets/img/peliculas/ironMan.webp",
+        "video": "assets/video/peliculas/ironMan.mp4",
+        "type": ["Acción", "Aventura", "Sci-Fi"],
+        "synopsis": "Tony Stark, inventor y multimillonario, es secuestrado por un grupo de terroristas. Para sobrevivir, construye una armadura de alta tecnología y se convierte en Iron Man, para luego enfrentarse a sus secuestradores."
+    },
+    {
+        "id": 4,
+        "name": "Chuck",
+        "director": "Josh Schwartz",
+        "price": "5.99",
+        "type": ["Acción", "Comedia", "Drama"],
+        "video": "assets/video/peliculas/chuck.mp4",
+        "cover": "assets/img/peliculas/chuck.webp",
+        "synopsis": "Chuck Bartowski es un genio de la informática que se ve de repente inmerso en una nueva carrera como espía del gobierno después de que los secretos más importantes del mundo se descarguen en su cerebro."
+    }, 
+    {
+        "id": 5,
+        "name": "The Flash",
+        "director": "Greg Berlanti",
+        "price": "5.99",
+        "type": ["Acción", "Aventura", "Drama"],
+        "cover": "assets/img/peliculas/flash.webp",
+        "video": "assets/video/peliculas/flash.mp4",
+        "synopsis": "Después de ser alcanzado por un rayo y dejado en coma durante nueve meses, el investigador de la policía Barry Allen despierta con la capacidad de moverse a una velocidad increíble. Barry dedica su vida a luchar contra el crimen y a encontrar al asesino de su madre."
+    },
+    {
+        "id": 6,
+        "name": "Sobrenatural",
+        "director": "Eric Kripke",
+        "price": "5.99",
+        "type": ["Drama", "Fantasía", "Horror"],
+        "cover": "assets/img/peliculas/sobrenatural.webp",
+        "video": "assets/video/peliculas/sobrenatural.mp4",
+        "synopsis": "Dos hermanos siguen los pasos de su padre como cazadores de demonios, luchando contra criaturas sobrenaturales de muchas clases, incluidos monstruos, demonios y dioses que caminan por la Tierra."
+    },
+    {
+        "id": 7,
+        "name": "Mazinkaiser vs AKDS",
+        "director": "Masahiko Murata",
+        "price": "12.99",
+        "type": ["Anime", "Acción", "Sci-Fi"],
+        "cover": "assets/img/peliculas/mazinkaiser.webp",
+        "video": "assets/video/peliculas/mazinkaiser.mp4",
+        "synopsis": "El General Negro, caudillo del Imperio Mikene, aparece de pronto de la nada sumiendo al mundo entero en el caos. El Ejército Mazinger, Venus A y Great Mazinger sucumben uno tras otro ante el poder de los Siete Generales y sus Bestias de Combate."
+    },
+    {
+        "id": 8,
+        "name": "Dragon Ball Super: Hero",
+        "director": "Tetsuro Kodama",
+        "price": "9.99",
+        "type": ["Anime", "Accin", "Aventura"],   
+        "cover": "assets/img/peliculas/dbHero.webp",
+        "video": "assets/video/peliculas/dbHero.mp4",
+        "synopsis": "La malvada organización Red Ribbon Army se reforma con nuevos y más poderosos androides, Gamma 1 y Gamma 2 para buscar venganza."
+    }
+]

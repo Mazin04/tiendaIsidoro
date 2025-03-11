@@ -77,5 +77,19 @@
     "copy_link": "Copy link",
     "close": "Close",
     "audiobooks_head": "Audiobooks",
-    "audiobooks_next": "Coming soon"
+    "audiobooks_next": "Coming soon",
+    "audiobook_not_found": "The requested audiobook was not found",
+    "see_more": "See more",
+    "see_less": "See less",
+    "listen_audiobook": "Listen to audiobook",
+    "audio_not_supported": "Your browser does not support the audio element",
+    "enjoy_the_audio": "Enjoy the audio",
+    "share_audiobook": "Share audiobook",
+    "movies_head": "Movies",
+    "movies_next": "Coming soon",
+    "watch_movie": "Watch movie",
+    "enjoy_the_video": "Enjoy the movie",
+    "movie_not_found": "The requested movie was not found",
+    "video_not_supported": "Your browser does not support the video tag",
+    "share_movie": "Share movie"
 }

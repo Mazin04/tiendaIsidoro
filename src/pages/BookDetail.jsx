@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaShare } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
 
 // Libros de la tienda
@@ -16,7 +16,7 @@ const BookDetail = () => {
     const [isShareOpen, setIsShareOpen] = useState(false);
     const [copySuccess, setCopySuccess] = useState(false);
 
-    useState(() => {
+    useEffect(() => {
         const books = i18n.language === "es" ? booksES : booksEN;
         const book = books.find((book) => book.id === parseInt(id));
         setBook(book);

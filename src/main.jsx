@@ -7,6 +7,8 @@ import Books from './pages/Books'
 import BookDetail from './pages/BookDetail'
 import AudioBooks from './pages/AudioBooks'
 import AudioBookDetail from './pages/AudioBookDetail'
+import Movies from './pages/Movies'
+import MovieDetail from './pages/MovieDetail'
 import NoPage from './pages/NoPage'
 import LoadingSpinner from './pages/Loading'
 import './index.css'
@@ -23,6 +25,8 @@ createRoot(document.getElementById('root')).render(
             <Route path="/libros/:id" element={<BookDetail />} />
             <Route path="/audiolibros" element={<AudioBooks />} />
             <Route path="/audiolibros/:id" element={<AudioBookDetail />} />
+            <Route path="/peliculas" element={<Movies />} />
+            <Route path="/peliculas/:id" element={<MovieDetail />} />
             <Route path="*" element={<NoPage />} />
             <Route path="/404_not_found" element={<NoPage />} />
           </Route>

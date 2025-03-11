@@ -77,5 +77,19 @@
     "copy_link": "Copiar enlace",
     "close": "Cerrar",
     "audiobooks_head": "Audiolibros",
-    "audiobooks_next": "Próximamente"
+    "audiobooks_next": "Próximamente",
+    "audiobook_not_found": "No se ha encontrado el audiolibro solicitado",
+    "see_more": "Ver más",
+    "see_less": "Ver menos",
+    "listen_audiobook": "Escuchar audiolibro",
+    "audio_not_supported": "Tu navegador no soporta el elemento de audio",
+    "enjoy_the_audio": "Disfruta del audio",
+    "share_audiobook": "Compartir audiolibro",
+    "movies_head": "Películas",
+    "movies_next": "Próximamente",
+    "watch_movie": "Ver película",
+    "enjoy_the_video": "Disfruta de la película",
+    "movie_not_found": "No se ha encontrado la película solicitada",
+    "video_not_supported": "Tu navegador no soporta la etiqueta de video",
+    "share_movie": "Compartir película"
 }

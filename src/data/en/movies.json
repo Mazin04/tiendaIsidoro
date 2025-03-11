@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Dragon Ball Super: Broly",
+        "director": "Tatsuya Nagamine",
+        "price": "10.99",
+        "type": ["Anime", "Action", "Adventure"],
+        "cover": "assets/img/peliculas/dbBroly.webp",
+        "video": "assets/video/peliculas/dbBroly.mp4",
+        "synopsis": "Peace has once again returned to Earth after the Tournament of Power. Upon discovering that there are incredibly powerful beings in different universes that he hasn't yet seen, Goku plans to continue training to become even stronger. Then, one day, a Saiyan named Broly, who they have never seen before, appears before Goku and Vegeta."
+    },
+    {
+        "id": 2,
+        "name": "Sonic 3",
+        "director": "Jeff Fowler",
+        "price": "10.99",
+        "type": ["Action", "Adventure", "Comedy"],
+        "cover": "assets/img/peliculas/sonic3.webp",
+        "video": "assets/video/peliculas/sonic3.mp4",
+        "synopsis": "Sonic, Knuckles, and Tails return in their most glorious adventure to date. The team comes together to face a new and formidable enemy, Shadow, a mysterious hedgehog with never-before-seen powers."
+    },
+    {
+        "id": 3,
+        "name": "Iron Man",
+        "director": "Jon Favreau",
+        "price": "5.99",
+        "cover": "assets/img/peliculas/ironMan.webp",
+        "video": "assets/video/peliculas/ironMan.mp4",
+        "type": ["Action", "Adventure", "Sci-Fi"],
+        "synopsis": "Tony Stark, an inventor and billionaire, is kidnapped by a group of terrorists. To survive, he builds a high-tech armor and becomes Iron Man, then confronts his captors."
+    },
+    {
+        "id": 4,
+        "name": "Chuck",
+        "director": "Josh Schwartz",
+        "price": "5.99",
+        "type": ["Action", "Comedy", "Drama"],
+        "cover": "assets/img/peliculas/chuck.webp",
+        "video": "assets/video/peliculas/chuck.mp4",
+        "synopsis": "Chuck Bartowski is a computer genius who suddenly finds himself thrust into a new career as a government spy after the world's most important secrets are downloaded into his brain."
+    },
+    {
+        "id": 5,
+        "name": "The Flash",
+        "director": "Greg Berlanti",
+        "price": "5.99",
+        "type": ["Action", "Adventure", "Drama"],
+        "cover": "assets/img/peliculas/flash.webp",
+        "video": "assets/video/peliculas/flash.mp4",
+        "synopsis": "After being struck by lightning and left in a coma for nine months, police investigator Barry Allen awakens with the ability to move at incredible speeds. Barry dedicates his life to fighting crime and finding his mother's killer."
+    },
+    {
+        "id": 6,
+        "name": "Supernatural",
+        "director": "Eric Kripke",
+        "price": "5.99",
+        "type": ["Drama", "Fantasy", "Horror"],
+        "cover": "assets/img/peliculas/sobrenatural.webp",
+        "video": "assets/video/peliculas/sobrenatural.mp4",
+        "synopsis": "Two brothers follow in their father's footsteps as demon hunters, battling supernatural creatures of all kinds, including monsters, demons, and gods that walk the Earth."
+    },
+    {
+        "id": 7,
+        "name": "Mazinkaiser vs. AKDS",
+        "director": "Masahiko Murata",
+        "price": "12.99",
+        "type": ["Anime", "Action", "Sci-Fi"],
+        "cover": "assets/img/peliculas/mazinkaiser.webp",
+        "video": "assets/video/peliculas/mazinkaiser.mp4",
+        "synopsis": "The Black General, leader of the Mikene Empire, suddenly appears out of nowhere, plunging the entire world into chaos. The Mazinger Army, Venus A, and Great Mazinger fall one after another to the power of the Seven Generals and their Battle Beasts."
+    },
+    {
+        "id": 8,
+        "name": "Dragon Ball Super: Hero",
+        "director": "Tetsuro Kodama",
+        "price": "9.99",
+        "type": ["Anime", "Action", "Adventure"],
+        "cover": "assets/img/peliculas/dbHero.webp",
+        "video": "assets/video/peliculas/dbHero.mp4",
+        "synopsis": "The evil Red Ribbon Army is reformed with new and more powerful androids, Gamma 1 and Gamma 2, to seek revenge."
+    }
+]
