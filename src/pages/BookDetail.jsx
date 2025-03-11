@@ -37,7 +37,7 @@ const BookDetail = () => {
     };
 
     if (!book) {
-        return <p className="text-center text-red-500">Libro no encontrado</p>;
+        return <p className="text-center text-red-500">{t('book_not_found')}</p>;
     }
 
     return (
@@ -87,7 +87,7 @@ const BookDetail = () => {
                     <div className="flex flex-row items-center justify-center w-full">
                         <div className="flex flex-row items-center justify-center w-fit cursor-pointer  transition-all duration-300 hover:bg-[#D8E3E2] p-2 rounded-md"
                             onClick={handleShare}>
-                            <p className="text-lg group">Compartir</p>
+                            <p className="text-lg group">{t('share')}</p>
                             <FaShare
                                 className="text-xl text-[#004D43] ml-2 group cursor-pointer  transition-all duration-300 transform hover:scale-105"
                                 onClick={handleShare}
@@ -101,8 +101,8 @@ const BookDetail = () => {
             {/* Pop-up de compartir */}
             {isShareOpen && (
                 <div className="fixed inset-0 bg-black/70 bg-opacity-50 flex justify-center items-center z-10">
-                    <div className="bg-white p-6 rounded-lg shadow-lg w-100">
-                        <h2 className="text-xl font-semibold text-center mb-4">Compartir este libro</h2>
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-110">
+                        <h2 className="text-xl font-semibold text-center mb-4">{t('share_book')}</h2>
 
                         {/* Enlace para copiar */}
                         <div className="flex justify-between items-center mb-4">
@@ -116,7 +116,7 @@ const BookDetail = () => {
                                 onClick={handleCopyLink}
                                 className="ml-2 cursor-pointer bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition-all duration-300 w-64"
                             >
-                                {copySuccess ? "¡Copiado!" : "Copiar enlace"}
+                                {copySuccess ? t('link_copied') : t('copy_link')}
                             </button>
                         </div>
 
@@ -135,7 +135,7 @@ const BookDetail = () => {
                                 onClick={() => setIsShareOpen(false)}
                                 className="bg-gray-500 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-all duration-300"
                             >
-                                Cerrar
+                                {t('close')}
                             </button>
                         </div>
                     </div>

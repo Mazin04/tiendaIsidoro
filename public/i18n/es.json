@@ -69,5 +69,13 @@
     "movies_subtitle": "VER PELÍCULAS, SERIES...",
     "books_head": "Libros",
     "books_next": "Próximamente",
-    "buy_item": "Añadir al carrito"
+    "buy_item": "Añadir al carrito",
+    "book_not_found": "No se ha encontrado el libro solicitado",
+    "share": "Compartir",
+    "share_book": "Compartir libro",
+    "link_copied": "Enlace copiado",
+    "copy_link": "Copiar enlace",
+    "close": "Cerrar",
+    "audiobooks_head": "Audiolibros",
+    "audiobooks_next": "Próximamente"
 }

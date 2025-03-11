@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "In Case the Voices Return",
+        "volume": "Vol.1",
+        "author": "Ángel Martín",
+        "price": "18.99",
+        "type": ["Spanish", "4h 11min"],
+        "volCover": "assets/img/audiolibros/porSiLasVocesVuelven.jpg",
+        "audio": "assets/audio/PorSiLasVocesVuelven.mp3",
+        "synopsis": "A few years ago, I completely broke down. So much so that they had to tie me to a bed in a psychiatric hospital to prevent me from hurting myself. I have no idea when my madness started to form. Maybe I was genetically predisposed. Maybe I nurtured depression by keeping certain things to myself so I wouldn't worry others. Or maybe it's just that some brains snap from one day to the next. One thing I've learned throughout this time is that when you openly admit that your mind has gone haywire, people immediately label it as a taboo. Although I narrated this audiobook for myself, 'In Case the Voices Return' is for anyone who has been through or is going through something similar, to break the stigma of mental illnesses once and for all. But if you just want to see the world as I saw it while I lost touch with reality, this audiobook is for you too. If you listen carefully to the voices, you'll discover fascinating things like this: You don't have to hit rock bottom to rebuild yourself from scratch. Shall we begin? A surprising testimony about madness. A first-person story about what it means to get lost and have to rebuild yourself from the ground up. A life-affirming story that grabs you from the first line."
+    },
+    {
+        "id": 2,
+        "name": "The Power of Now",
+        "volume": "Vol.1",
+        "author": "Eckhart Tolle",
+        "price": "16.99",
+        "type": ["Spanish", "6h 49min"],
+        "volCover": "assets/img/audiolibros/elPoderDelAhora.jpg",
+        "audio": "assets/audio/ElPoderDelAhora.mp3",
+        "synopsis": "FonoLibro is proud to present the Spanish audiobook of the New York Times bestseller, The Power of Now by Eckhart Tolle. To embark on the journey to The Power of Now, you need to leave behind your analytical mind and false self, your ego. Access to the now is everywhere – in the body, in the silence, and in the space around you. These are the keys to entering a state of inner peace. They can be used to bring you to the now, to the present moment, where problems do not exist. It is here that you find your joy and are able to find yourself. It is here that you discover that you are complete and perfect. Although the journey is a challenge, Eckhart Tolle offers simple language in a Q&A format. The words themselves are signposts that will guide you on your journey. New discoveries await along the way: You are not your mind, you can find your way out of psychological pain, true human power is found by surrendering to the now. When you become completely present and accept what is, you will open yourself to the transformative experience of The Power of Now."
+    },
+    {
+        "id": 3,
+        "name": "Sapiens",
+        "volume": "Vol.1",
+        "author": "Yuval Noah Harari",
+        "price": "19.99",
+        "type": ["Spanish", "16h 20min"],
+        "volCover": "assets/img/audiolibros/sapiens.jpg",
+        "audio": "assets/audio/Sapiens.mp3",
+        "synopsis": "The nonfiction book of the year. International bestseller with over ten million copies sold. Number one on The New York Times list. Recommended by Barack Obama, Bill Gates, and Mark Zuckerberg. Written by one of the most interesting historians of today, here is the fascinating interpretation of Yuval Noah Harari on the history of humankind. National and international bestseller, this book explores the ways in which biology and history have shaped us and improved our understanding of what it means to be 'human'. 70,000 years ago, at least six species of humans inhabited the Earth. Today, only one remains: Homo sapiens. How did our species prevail in the struggle for existence? Why did our hunter-gatherer ancestors come together to create cities and kingdoms? How did we come to believe in gods, nations, and human rights; to trust in money, books, and laws? How did we end up subject to bureaucracy, schedules, and consumerism? And how will the world be in the coming millennia? In *Sapiens*, Yuval Noah Harari outlines a brief history of humankind, from the first humans who walked the Earth to the radical and sometimes devastating advances of the three great revolutions our species has gone through: the cognitive, the agricultural, and the scientific. Drawing from findings in diverse disciplines like biology, anthropology, and economics, Harari explores how the major currents of history have shaped our society, the animals and plants around us, and even our personalities. Have we gained happiness as history has progressed? Will we ever free our behavior from the legacy of the past? Can we do anything to influence future centuries? Bold, ambitious, and provocative, this book questions everything we thought we knew about humankind: our origins, our ideas, our actions, our power... and our future."
+    },
+    {
+        "id": 4,
+        "name": "1984",
+        "volume": "Vol.1",
+        "author": "George Orwell",
+        "price": "14.99",
+        "type": ["Spanish", "3h 27min"],
+        "volCover": "assets/img/audiolibros/1984.jpg",
+        "audio": "assets/audio/1984.mp3",
+        "synopsis": "In a dystopian future, Winston Smith lives in a society controlled by a totalitarian government. The novel explores themes of social control, individual freedom, and truth."
+    },
+    {
+        "id": 5,
+        "name": "The Alchemist",
+        "volume": "Vol.1",
+        "author": "Paulo Coelho",
+        "price": "19.99",
+        "type": ["Spanish", "6h 50min"],
+        "volCover": "assets/img/audiolibros/elAlquimista.jpg",
+        "audio": "assets/audio/ElAlquimista.mp3",
+        "synopsis": "The story of Santiago, a young shepherd who embarks on a journey in search of his personal legend. A tale of overcoming obstacles, dreams, and the pursuit of happiness."
+    },
+    {
+        "id": 6,
+        "name": "Man's Search for Meaning",
+        "volume": "Vol.1",
+        "author": "Viktor Frankl",
+        "price": "17.99",
+        "type": ["Spanish", "5h 40min"],
+        "volCover": "assets/img/audiolibros/elHombreEnBuscaDeSentido.jpg",
+        "audio": "assets/audio/ElHombreEnBuscaDeSentido.mp3",
+        "synopsis": "Frankl narrates his experiences as a prisoner in Nazi concentration camps and how these experiences led him to develop logotherapy, a therapy based on the search for meaning."
+    }
+]

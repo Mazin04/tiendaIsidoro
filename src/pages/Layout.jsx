@@ -36,7 +36,7 @@ const Layout = () => {
         </div>
 
       </div>
-      <nav className="sticky top-0 z-50 bg-white border-b border-[#DCDFE6]">
+      <nav className="sticky top-0 z-5 bg-white border-b border-[#DCDFE6]">
         {/* Barra verde que ocupa todo el ancho */}
 
 
