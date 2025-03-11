@@ -7,7 +7,7 @@ import LanguageSelect from "../components/languageSelect";
 import Footer from "../components/footer"
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-
+import { FaTimes } from "react-icons/fa";
 
 // Importar los JSON de datos
 import booksEN from "../data/en/books.json";
@@ -22,6 +22,14 @@ const Layout = () => {
   const { t, i18n } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredResults, setFilteredResults] = useState([]);
+  const [cartVisible, setCartVisible] = useState(false);
+
+  const toggleCart = () => {
+    console.log("toggleCart");
+    setCartVisible(!cartVisible);
+  }
+
+  const cartContent = [];
 
 
   // Determinar qué datos cargar en función del idioma seleccionado
@@ -106,24 +114,24 @@ const Layout = () => {
                       onClick={() => {
                         setSearchTerm(""); // Vaciar el input
                         setFilteredResults([]); // Limpiar los resultados
-                        }}
-                        key={item.id}
-                        to={`/${item.type}/${item.id}`}
-                        className="flex flex-row items-center justify-start px-4 py-2 hover:bg-gray-200 border-b border-[#DCDFE6]"
-                      >
-                        <img src={`/${item.cover}`} alt={item.name} className="h-28 object-cover mr-4" />
-                        <div className="flex flex-col space-y-2">
+                      }}
+                      key={item.id}
+                      to={`/${item.type}/${item.id}`}
+                      className="flex flex-row items-center justify-start px-4 py-2 hover:bg-gray-200 border-b border-[#DCDFE6]"
+                    >
+                      <img src={`/${item.cover}`} alt={item.name} className="h-28 object-cover mr-4" />
+                      <div className="flex flex-col space-y-2">
                         <p className="font-semibold">{item.name}</p>
                         <p>{item.author || item.director}</p>
-                        </div>
-                      </Link>
-                      ))}
-                    </div>
-                    )}
-                  </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
 
-                  {/* Iconos de ubicación y usuario */}
+            {/* Iconos de ubicación y usuario */}
             <div className="flex flex-row space-x-2 text-[#004D43]">
               <Link className="mt-2 md:mt-0 flex items-center hover:bg-[#D8E3E2] p-2 rounded-md">
                 <div className="flex items-center space-x-2">
@@ -137,7 +145,7 @@ const Layout = () => {
                   <p>{t('account')}</p>
                 </div>
               </Link>
-              <Link className="mt-2 md:mt-0 flex items-center relative group">
+              <Link className="mt-2 md:mt-0 flex items-center relative group" onClick={toggleCart}>
                 <div className="flex items-center justify-center group-hover:bg-[#D8E3E2] p-3 rounded-full">
                   <HiOutlineShoppingBag className="text-2xl" />
                   {/* Círculo con el número */}
@@ -162,6 +170,37 @@ const Layout = () => {
           <Link to={"/peliculas"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('movies')}</Link>
         </div>
       </nav>
+
+      {/* Carrito oculto con animación de aparición */}
+      <div className={`fixed inset-0 bg-black/60 z-50 items-center justify-center grid-cols-8 ${cartVisible ? "grid" : "hidden"}`}>
+        <div className="col-span-6 w-full h-full" onClick={toggleCart}></div>
+        <div className={`col-span-2 flex p-4 pt-16 flex-col items-center justify-center bg-white h-full transform transition-transform duration-500 ${cartVisible ? "translate-x-0" : "translate-x-full"}`}>
+          {/* Aquí va el contenido del carrito */}
+          <FaTimes className="absolute top-4 right-4 text-2xl cursor-pointer" onClick={toggleCart} />
+
+
+          {cartContent.length === 0 ? (
+            <p className="font-bold text-2xl">El carrito está vacío</p>) : (
+            // Aquí va el contenido del carrito cuando hay items
+            <div className="flex flex-col w-full space-y-2 h-full">
+              {cartContent.map((item, index) => (
+                <div key={index} className="flex flex-row items-center justify-between w-full p-2 border-b">
+                  <img src={item.image} alt={item.name} className="h-16 w-16 object-cover" />
+                  <div className="flex flex-col flex-grow ml-4">
+                    <p className="font-semibold">{item.name}</p>
+                    <p>{item.price}</p>
+                  </div>
+                </div>
+              ))}
+              <button className="bg-[#004D43] text-white p-2 w-full flex justify-center items-center focus:outline-none border-0 rounded-lg">
+                <HiOutlineShoppingBag className="text-2xl" /> Pagar
+              </button>
+            </div>
+
+          )}
+        </div>
+      </div>
+
       <Outlet />
 
       <Footer />
