@@ -76,7 +76,7 @@
         "price": "9.99",
         "type": ["Anime", "Accin", "Aventura"],   
         "cover": "assets/img/peliculas/dbHero.webp",
-        "video": "assets/video/peliculas/dbHero.mp4",
+        "video": "assets/video/peliculas/dbhero.mp4",
         "synopsis": "La malvada organización Red Ribbon Army se reforma con nuevos y más poderosos androides, Gamma 1 y Gamma 2 para buscar venganza."
     }
 ]

@@ -6,10 +6,50 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import LanguageSelect from "../components/languageSelect";
 import Footer from "../components/footer"
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
+
+// Importar los JSON de datos
+import booksEN from "../data/en/books.json";
+import audiobooksEN from "../data/en/audiobooks.json";
+import moviesEN from "../data/en/movies.json";
+import booksES from "../data/es/books.json";
+import audiobooksES from "../data/es/audiobooks.json";
+import moviesES from "../data/es/movies.json";
 
 
 const Layout = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredResults, setFilteredResults] = useState([]);
+
+
+  // Determinar qué datos cargar en función del idioma seleccionado
+  const language = i18n.language === "es" ? "es" : "en";
+  const books = language === "es" ? booksES : booksEN;
+  const audiobooks = language === "es" ? audiobooksES : audiobooksEN;
+  const movies = language === "es" ? moviesES : moviesEN;
+
+  const allItems = [
+    ...books.map((item) => ({ ...item, type: "libros" })),
+    ...audiobooks.map((item) => ({ ...item, type: "audiolibros" })),
+    ...movies.map((item) => ({ ...item, type: "peliculas" })),
+  ];
+
+
+  const handleSearch = (e) => {
+    const term = e.target.value;
+    setSearchTerm(term);
+
+    if (term.length >= 1) {
+      const regex = new RegExp(`\\b${term}`, "i");
+      const results = allItems.filter((item) => regex.test(item.name));
+      console.log(results);
+      setFilteredResults(results);
+    } else {
+      setFilteredResults([]);
+    }
+  };
 
   return (
     <>
@@ -46,15 +86,34 @@ const Layout = () => {
             <Link to={"/"}><img src={Logo} alt="Logo Casa del Libro" className="max-w-[200px]" /></Link>
 
             {/* Barra de búsqueda */}
-            <div className="flex flex-row space-x-0 border border-[#004D43]  mx-4 max-w-[620px] w-full overflow-hidden flex-shrink">
+            <div className="relative flex flex-row space-x-0 border border-[#004D43]  mx-4 max-w-[620px] w-full flex-shrink">
               <input
                 type="text"
+                value={searchTerm}
+                onChange={handleSearch}
                 placeholder={t('search_placeholder')}
                 className="p-2 w-full focus:outline-none focus:ring-2 focus:ring-[#004D43] focus:border-[#004D43] border-0"
               />
               <button className="bg-[#004D43] text-white p-2 w-[50px] flex justify-center items-center focus:outline-none border-0">
                 <CiSearch className="text-2xl" />
               </button>
+              {filteredResults.length > 0 && (
+                <div className="absolute left-0 top-10 z-50 w-full h-fit bg-white shadow-lg border-b border-x border-[#004D43] max-h-[150px] overflow-auto">
+                  {filteredResults.map((item) => (
+                    <Link
+                      onClick={() => {
+                        setSearchTerm(""); // Vaciar el input
+                        setFilteredResults([]); // Limpiar los resultados
+                      }}
+                      key={item.id}
+                      to={`/${item.type}/${item.id}`}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
 
@@ -97,7 +156,6 @@ const Layout = () => {
           <Link to={"/peliculas"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('movies')}</Link>
         </div>
       </nav>
-
       <Outlet />
 
       <Footer />
