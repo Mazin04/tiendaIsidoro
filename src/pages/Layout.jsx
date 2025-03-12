@@ -6,8 +6,9 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import LanguageSelect from "../components/languageSelect";
 import Footer from "../components/footer"
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
+import { useCart } from "../cart/CartContext";
 
 // Importar los JSON de datos
 import booksEN from "../data/en/books.json";
@@ -20,17 +21,23 @@ import moviesES from "../data/es/movies.json";
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
+  const { cartContent, removeFromCart, increaseQuantity, decreaseQuantity, clearCart } = useCart();
   const [cartVisible, setCartVisible] = useState(false);
+  const [cartBounced, setCartBounced] = useState(false); const [searchTerm, setSearchTerm] = useState("");
+  const [filteredResults, setFilteredResults] = useState([]);
+
 
   const toggleCart = () => {
-    console.log("toggleCart");
     setCartVisible(!cartVisible);
   }
 
-  const cartContent = [];
-
+  useEffect(() => {
+    if (cartContent.length > 0) {
+      setCartBounced(true);
+      const timer = setTimeout(() => setCartBounced(false), 500); // Bote durante 0.5 segundos
+      return () => clearTimeout(timer);
+    }
+  }, [cartContent]);
 
   // Determinar qué datos cargar en función del idioma seleccionado
   const language = i18n.language === "es" ? "es" : "en";
@@ -44,6 +51,7 @@ const Layout = () => {
     ...movies.map((item) => ({ ...item, type: "peliculas" })),
   ];
 
+  const totalPrice = cartContent.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const handleSearch = (e) => {
     const term = e.target.value;
@@ -54,7 +62,6 @@ const Layout = () => {
     if (term.length >= 1) {
       const regex = new RegExp(`\\b${term}\\b`, "i"); // Búsqueda exacta de palabra
       const results = allItems.filter((item) => regex.test(item.name));
-      console.log(results);
       setFilteredResults(results);
     } else {
       setFilteredResults([]);
@@ -145,12 +152,12 @@ const Layout = () => {
                   <p>{t('account')}</p>
                 </div>
               </Link>
-              <Link className="mt-2 md:mt-0 flex items-center relative group" onClick={toggleCart}>
+              <Link className={`relative group cursor-pointer ${cartBounced ? "animate-bounce" : ""}`} onClick={toggleCart}>
                 <div className="flex items-center justify-center group-hover:bg-[#D8E3E2] p-3 rounded-full">
                   <HiOutlineShoppingBag className="text-2xl" />
                   {/* Círculo con el número */}
                   <span className="absolute top-[25px] right-[5px] bg-pink-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">
-                    0
+                    {cartContent.length}
                   </span>
                 </div>
               </Link>
@@ -170,36 +177,49 @@ const Layout = () => {
           <Link to={"/peliculas"} className="p-1 pt-2 border-b-6 border-transparent hover:border-[#004D43]">{t('movies')}</Link>
         </div>
       </nav>
-
       {/* Carrito oculto con animación de aparición */}
       <div className={`fixed inset-0 bg-black/60 z-50 items-center justify-center grid-cols-8 ${cartVisible ? "grid" : "hidden"}`}>
         <div className="col-span-6 w-full h-full" onClick={toggleCart}></div>
-        <div className={`col-span-2 flex p-4 pt-16 flex-col items-center justify-center bg-white h-full transform transition-transform duration-500 ${cartVisible ? "translate-x-0" : "translate-x-full"}`}>
+        <div className={`col-span-2 flex flex-col p-4 pt-12 items-center justify-center bg-white h-full transform transition-transform duration-500 ${cartVisible ? "translate-x-0" : "translate-x-full"}`}>
           {/* Aquí va el contenido del carrito */}
           <FaTimes className="absolute top-4 right-4 text-2xl cursor-pointer" onClick={toggleCart} />
 
-
           {cartContent.length === 0 ? (
-            <p className="font-bold text-2xl">El carrito está vacío</p>) : (
-            // Aquí va el contenido del carrito cuando hay items
-            <div className="flex flex-col w-full space-y-2 h-full">
-              {cartContent.map((item, index) => (
-                <div key={index} className="flex flex-row items-center justify-between w-full p-2 border-b">
-                  <img src={item.image} alt={item.name} className="h-16 w-16 object-cover" />
+            <p className="font-bold text-2xl">El carrito está vacío</p>
+          ) : (
+            <div className="flex flex-col w-full space-y-2 h-full flex-grow">
+              {cartContent.map((item) => (
+                <div key={item.id} className="flex flex-row items-center justify-between w-full p-2 border-b">
+                  <div className="w-32 flex items-center justify-center">
+                    <img src={item.cover} alt={item.name} className="h-24 object-cover" />
+                  </div>
                   <div className="flex flex-col flex-grow ml-4">
                     <p className="font-semibold">{item.name}</p>
-                    <p>{item.price}</p>
+                    <p>{item.price}€</p>
+                    <div className="flex space-x-2">
+                      <button onClick={() => increaseQuantity(item.id)}>+</button>
+                      <p>Cantidad: {item.quantity}</p>
+                      <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                      <button onClick={() => removeFromCart(item.id)}>Eliminar</button>
+                    </div>
                   </div>
                 </div>
               ))}
-              <button className="bg-[#004D43] text-white p-2 w-full flex justify-center items-center focus:outline-none border-0 rounded-lg">
-                <HiOutlineShoppingBag className="text-2xl" /> Pagar
-              </button>
+              <div className="flex justify-between w-full p-2">
+                <p>Total: {totalPrice}€</p>
+              </div>
             </div>
-
           )}
+          {cartContent.length !== 0 && (
+            <button onClick={clearCart} className="bg-[#004D43] text-white p-2 w-full flex justify-center items-center focus:outline-none border-0 rounded-lg mt-auto">
+              <HiOutlineShoppingBag className="text-2xl" /> Pagar
+            </button>
+          )}
+
+
         </div>
       </div>
+
 
       <Outlet />
 

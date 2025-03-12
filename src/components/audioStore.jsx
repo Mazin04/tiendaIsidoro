@@ -1,10 +1,29 @@
 import { useTranslation } from "react-i18next";
 import { FaCartShopping } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../cart/CartContext";
 
 const AudioStore = ({ id, name, author, volume, price, type, volCover }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    const button = e.target;
+    const originalContent = button.innerHTML;
+  
+    button.disabled = true;
+    button.innerHTML = t('added_to_cart');
+  
+    addToCart({ id, name, price, cover: volCover, quantity: 1 });
+  
+    setTimeout(() => {
+      button.disabled = false;
+      button.innerHTML = originalContent;
+    }, 1000);
+  };
+  
 
   const handleClick = () => {
     navigate(`/audiolibros/${id}`);
@@ -15,7 +34,7 @@ const AudioStore = ({ id, name, author, volume, price, type, volCover }) => {
       {/* Contenedor de la imagen con overflow-hidden */}
       <div className="w-full h-64 overflow-hidden rounded-md" onClick={handleClick}>
         <img
-          src={volCover}
+          src={`/${volCover}`}
           alt={name}
           className="w-full h-full object-cover transform transition-all duration-300 hover:scale-105"
         />
@@ -43,7 +62,7 @@ const AudioStore = ({ id, name, author, volume, price, type, volCover }) => {
       </div>
 
       {/* Botón de agregar al carrito */}
-      <button className="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md w-full hover:bg-yellow-600 transition-all flex flex-col items-center justify-center">
+      <button onClick={handleAddToCart} className="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md w-full hover:bg-yellow-600 transition-all flex flex-col items-center justify-center">
         <p className="flex flex-row items-center justify-center">{t('buy_item')} <FaCartShopping className="ml-2" /></p> {price}€
       </button>
     </div>
