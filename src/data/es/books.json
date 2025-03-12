@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 2000001,
         "name": "Dan Da Dan",
         "volume": "Vol.6",
         "author": "Yukinobu Tatsu",
@@ -10,7 +10,7 @@
         "synopsis": "¡OKARUN CONTRA EL OJEADOR! La familia Kitô hace caer a Okarun y los demás al sótano de la casa de Jiji para usarlos como ofrenda para la serpiente gigante. En ese sótano, que solía usarse para sacrificar a niños en el pasado, reside un ojeador que se hace con el cuerpo de Jiji... ¡y ataca a Momo y Okarun! Okarun decide ayudar a Momo a salir a la superficie para enfrentarse el solo al ojeador. Momo, una vez en el exterior, trama un plan para derribar a la serpiente gigante. ¡¿Serán capaces de acabar con la violenta serpiente gigante y salvar a Jiji del ojeador?!"
     },
     {
-        "id": 2,
+        "id": 2000002,
         "name": "Dragon Ball Super",
         "volume": "Vol.4",
         "author": "Akira Toriyama",
@@ -20,7 +20,7 @@
         "synopsis": "Goku Black, que se dedica a causar estragos en el futuro de un mundo paralelo, ¡es en realidad Zamasu que, conducido por un retorcido sentido de la justicia, se dispone a exterminar a la humanidad en pleno! Goku consigue dominar el mafûba, la tecnica que le permitirá derrotar al inmortal Zamasu, ¡y junto a Vegeta se dirigen al futuro en el que los espera Trunks...!"
     },
     {
-        "id": 4,
+        "id": 2000003,
         "name": "Dragon Ball Super",
         "volume": "Vol.19",
         "author": "Akira Toriyama",
@@ -30,7 +30,7 @@
         "synopsis": "Cuando Gas parecía totalmente acorralado ante los fieros ataques de Granola, libera sus instintos y protagoniza un despertar. Goku y Vegeta se encuentran abrumados ante su apabullante poder. ¿¡Podría ser que la clave para derrotar a Gas se encuentre en los recuerdos de Bardock, el difunto padre de Goku...!?"
     },
     {
-        "id": 5,
+        "id": 2000004,
         "name": "Kaiju No.8",
         "volume": "Vol.8",
         "author": "Naoya Matsumoto",
@@ -40,7 +40,7 @@
         "synopsis": "Reno Ichikawa sigue entrenándose para dominar el arma creada a partir de un Kaiju identificado que le asignaron. La prueba para demostrar los resultados de su entrenamiento comienza cuando se enfrenta a un Kaiju. Mientras tanto, Iharu, que ha sido testigo del crecimiento de Reno desde que se conocieron, tiene sentimientos encontrados, dándole la sensación de que se queda atrás. Los dos se retan a derrotar al Kaiju, pero... ¡algo le ocurre a Reno! ¡En busca de la esperanza en este octavo tomo!"
     },
     {
-        "id": 6,    
+        "id": 2000005,    
         "name": "Kaiju No.8",
         "volume": "Vol.9",
         "author": "Naoya Matsumoto",
@@ -50,7 +50,7 @@
         "synopsis": "Reno Ichikawa entrena duro para convertirse en el primer portador en la historia del arma del sexto Kaiju. Kafka, por su parte, prosigue sus esfuerzos aprendiendo técnicas de combate cuerpo a cuerpo con Hoshina. Las Fuerzas de Defensa tratan de anticiparse al ataque del noveno Kaiju y preparan a sus tropas para ello. Mientras tanto, Narumi instruye a Kikoru para que utilice la herencia de su madre: el arma del cuarto Kaiju. ¡La nueva generación se pone en marcha en este noveno tomo!"
     },
     {
-        "id": 7,
+        "id": 2000006,
         "name": "Kaiju No.8",
         "volume": "Vol.10",
         "author": "Naoya Matsumoto",
@@ -60,7 +60,7 @@
         "synopsis": "Reno Ichikawa sigue entrenándose para dominar el arma creada a partir de un Kaiju identificado que le asignaron. La prueba para demostrar los resultados de su entrenamiento comienza cuando se enfrenta a un Kaiju. Mientras tanto, Iharu, que ha sido testigo del crecimiento de Reno desde que se conocieron, tiene sentimientos encontrados, dándole la sensación de que se queda atrás. Los dos se retan a derrotar al Kaiju, pero... ¡algo le ocurre a Reno! ¡En busca de la esperanza en este octavo tomo!"
     },
     {
-        "id": 8,
+        "id": 2000007,
         "name": "My Hero Academia",
         "volume": "Vol.19",
         "author": "Kohei Horikoshi",
@@ -70,7 +70,7 @@
         "synopsis": "¡¡No puede faltar un buen festival en una escuela!! ¡Con la tensión que se respira últimamente, esto servirá para despejarse! ¡No se si sere de mucha ayuda, pero que no falte el rock! ¡Plus ultra (más allá)!"
     },
     {
-        "id": 9,
+        "id": 2000008,
         "name": "My Hero Academia",
         "volume": "Vol.33",
         "author": "Kohei Horikoshi",

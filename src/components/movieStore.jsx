@@ -1,10 +1,28 @@
 import { useTranslation } from "react-i18next";
 import { FaCartShopping } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../cart/CartContext";
 
 const MovieStore = ({ id, name, director, price, type, cover }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    const button = e.target;
+    const originalContent = button.innerHTML;
+  
+    button.disabled = true;
+    button.innerHTML = t('added_to_cart');
+  
+    addToCart({ id, name, price, cover, quantity: 1 });
+  
+    setTimeout(() => {
+      button.disabled = false;
+      button.innerHTML = originalContent;
+    }, 1000);
+  };
 
   const handleClick = () => {
     navigate(`/peliculas/${id}`);
@@ -40,7 +58,7 @@ const MovieStore = ({ id, name, director, price, type, cover }) => {
       </div>
 
       {/* Botón de agregar al carrito */}
-      <button className="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md w-full hover:bg-yellow-600 transition-all flex flex-col items-center justify-center">
+      <button onClick={handleAddToCart} className="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-md w-full hover:bg-yellow-600 transition-all flex flex-col items-center justify-center">
         <p className="flex flex-row items-center justify-center">{t('buy_item')} <FaCartShopping className="ml-2" /></p> {price}€
       </button>
     </div>
